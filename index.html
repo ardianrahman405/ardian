@@ -1,31 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maintenance Page</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Situs Sedang Maintenance</title>
     <style>
         body {
-            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            font-family: Arial, sans-serif;
             text-align: center;
-        }
-        h2 {
             color: #333;
         }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 80%;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 48px;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
         p {
-            color: #666;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .icon {
+            font-size: 80px;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
         }
     </style>
 </head>
 <body>
-    <div>
-        <h2>Sedang Maintenance</h2>
-        <p>Mohon maaf atas ketidaknyamanan ini. Kami sedang melakukan pemeliharaan dan akan kembali segera.</p>
+    <div class="container">
+        <div class="icon">🚧</div>
+        <h1>Situs Sedang Maintenance</h1>
+        <p>Maaf, saya sedang melakukan pemeliharaan untuk meningkatkan estetika halaman web</p>
+        <p>Silakan coba lagi dalam beberapa saat.</p>
+        <div class="footer">
+            <p>&copy; 2024 ArdianRahman. Semua Hak Dilindungi.</p>
+        </div>
     </div>
 </body>
 </html>
