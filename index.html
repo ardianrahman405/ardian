@@ -1,61 +1,507 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Situs Sedang Maintenance</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            color: #333;
-        }
-        .container {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 40px;
-            width: 80%;
-            max-width: 600px;
-        }
-        h1 {
-            font-size: 48px;
-            color: #e74c3c;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .icon {
-            font-size: 80px;
-            color: #e74c3c;
-            margin-bottom: 20px;
-        }
-        .footer {
-            margin-top: 40px;
-            font-size: 14px;
-            color: #888;
-        }
-    </style>
+    <title>Ardian Rahman - Junior Frontend Web </title>
+    <link rel="icon" type="image/png" href="images/logi web-fotor-202410271726.png">
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
+
 <body>
-    <div class="container">
-        <div class="icon">🚧</div>
-        <h1>Situs Sedang Maintenance</h1>
-        <p>Maaf, saya sedang melakukan pemeliharaan untuk meningkatkan estetika halaman web</p>
-        <p>Silakan coba lagi dalam beberapa saat.</p>
-        <div class="footer">
-            <p>&copy; 2024 ArdianRahman. Semua Hak Dilindungi.</p>
+
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav flex items-center">
+            <img src="images/logo tp.png" class="logo" data-aos="fade-right" data-aos-duration="2000">
+            <h2 class="t-white" data-aos="fade-right" data-aos-duration="2000">Ardian Rahman</h2>
         </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto" data-aos="fade-right" data-aos-duration="2000">Home</a></li>
+                <li><a href="#about" class="t-white roboto" data-aos="fade-left" data-aos-duration="2000"
+                        data-aos-delay="200">About Me</a></li>
+                <li><a href="#skills" class="t-white roboto" data-aos="fade-down" data-aos-duration="2000"
+                        data-aos-delay="400">Skills</a></li>
+                <li><a href="#projects" class="t-white roboto" data-aos="fade-right" data-aos-duration="2000"
+                        data-aos-delay="600">Projects</a></li>
+                <li><a href="#sertification" class="t-white roboto" data-aos="fade-left" data-aos-duration="2000"
+                        data-aos-delay="800">Certification</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bottom Navigator -->
+    <section id="bottom">
+        <div class="bottom-nav flex s-center items-center">
+            <ul class="flex s-around items-center">
+                <a href="#home">
+                    <li class="bottomo-hover flex s-center items-center" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0"
+                        data-aos-duration="2000"><i class="fa-solid fa-house"></i></li>
+                </a>
+                <a href="#about">
+                    <li class="bottomo-hover flex s-center items-center" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="2000"
+                        data-aos-delay="200"><i class="fa-solid fa-user"></i></li>
+                </a>
+                <a href="#skills">
+                    <li class="bottomo-hover flex s-center items-center" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="2000"
+                        data-aos-delay="400"><i class="fa-solid fa-code"></i></li>
+                </a>
+                <a href="#sertification">
+                    <li class="bottomo-hover flex s-center items-center" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" data-aos-duration="2000"
+                        data-aos-delay="600">
+                        <i class="fa-solid fa-rocket"></i>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+
+                <h6 class="poppinss" data-aos="fade-zoom-in" data-aos-duration="2000">Hi, I'm</h6>
+                <h1 class="t-white" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="200">Ardian Rahman
+                </h1>
+                <div class="card">
+                    <div class="loader" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="400">
+                        <p>Junior</p>
+                        <div class="words" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="400">
+                            <span class="word">Front-End Web Developer</span>
+                            <span class="word">Network Engineering</span>
+                            <span class="word">Front-End Web Developer</span>
+                            <span class="word">Network Engineering</span>
+                            <span class="word">Front-End Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" target="_blank"><button class="btn poppins" data-aos="fade-zoom-in" data-aos-duration="2000"
+                        data-aos-delay="600">Resume</button></a>
+                <a class="btn live poppins" id="hireme"
+                    href="https://www.linkedin.com/in/arvxianxianardianrahman23?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="600">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <!-- Here in src replace the given link with your image link -->
+                <img src="images/foto.png" alt="3d Caracter">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around ">
+            <div class="about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <div class="book" data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-delay="400">
+                    <img src="images/profile.jpg">
+                    <div class="cover">
+                        <p>Hover Me!...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins"></h1>
+                    <p class="t-white poppins" data-aos="fade-zoom-in" data-aos-duration="3000">Saya Ardian Rahman
+                        seorang siswa SMKN 1 Jakarta yang sedang menempuh pendidikan
+                        di jurusan Teknik Komputer dan Jaringan. Dalam perjalanan akademis saya, saya tidak hanya fokus
+                        pada aspek jaringan komputer,
+                        tetapi juga memiliki minat yang mendalam dalam pengembangan front end web. Ketertarikan saya
+                        terhadap bidang ini mendorong saya
+                        untuk terus mengeksplorasi dan mempelajari berbagai teknologi terbaru dalam pengembangan web,
+                        dengan tujuan untuk menciptakan antarmuka
+                        pengguna yang menarik, responsif, dan fungsional.<br>
+
+                    <p class="t-white poppins" data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-delay="200">Di
+                        luar kesibukan akademis, saya memiliki hobi bermain badminton dan berenang. Kedua
+                        aktivitas ini membantu saya menjaga kesehatan fisik
+                        serta memberi keseimbangan dalam kehidupan sehari-hari. Dengan kombinasi keahlian teknis dan
+                        semangat yang kuat dalam pengembangan diri,
+                        saya berharap dapat memberikan kontribusi yang berarti dalam dunia teknologi informasi di masa
+                        depan.
+                    </p>
+                    </p>
+                    <a class="btn live poppins" id="hireme" href="resumeabout.html" data-aos="fade-zoom-in"
+                        data-aos-duration="2000" data-aos-delay="600">Summary Me</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2" data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-delay="600">
+            Skills</h1>
+        <div class="services-container flex s-around h-50">
+            <div class=" skills-left flex s-center items-center">
+                <img src="images/skills.png" data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-delay="600"
+                    alt="">
+            </div>
+
+            <div class="skills-right flex items-center">
+                <div class="skillss-container">
+
+                    <div class="html bar p-relative" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="images/html.png" alt="logo html">
+                        <span class="bar-content t-white">HTML</span><span
+                            class="bar-content right-skills t-white"></span>
+                    </div>
+
+                    <div class="css bar p-relative" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="images/css.png" alt="logo html">
+                        <span class="bar-content t-white">CSS</span><span
+                            class="bar-content right-skills t-white"></span>
+                    </div>
+
+                    <div class="bootstrap bar p-relative" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="images/bootstrap.png" alt="logo html">
+                        <span class="bar-content t-white">Bootstrap</span><span
+                            class="bar-content right-skills t-white"></span>
+                    </div>
+
+                    <div class="js bar p-relative" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="images/javascript.png" alt="logo html">
+                        <span class="bar-content t-white">JavaScript</span><span
+                            class="bar-content right-skills t-white"></span>
+                    </div>
+
+                    <div class="figma bar p-relative" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="images/figma.png" alt="logo html">
+                        <span class="bar-content t-white">Figma</span><span
+                            class="bar-content right-skills t-white"></span>
+                    </div>
+
+                    <div class="tailwind bar p-relative" data-aos="fade-up" data-aos-duration="2000">
+                        <img src="images/tailwind.png" alt="logo html">
+                        <span class="bar-content t-white">TailwindCss</span><span
+                            class="bar-content right-skills t-white"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects Section -->
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1 class="t-center my-2 t-white f-2" data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-delay="800">
+            Projects</h1>
+        <div class="services-container flex s-center">
+            <div class="test-item flex f-col items-center" data-aos="zoom-in-up" data-aos-duration="1000"
+                data-aos-delay="200">
+                <img src="images/oceanproject.png" alt="">
+                <h1 class="t-white poppins">The Ocean | Project</h1>
+                <p class="t-white poppins">Proyek lautan ini merupakan cerminan dari pribadi saya sebagai pencinta
+                    lautan, karena pada kenyataannya kehidupan tidak hanya penting di daratan, tetapi juga di lautan.
+                </p>
+                <a href="https://the-ocean-ardian.vercel.app/" target="_blank" class="btn-visit">
+                    <i class="fas fa-external-link-alt"></i> <!-- Font Awesome Icon -->
+                </a>
+            </div>
+
+            <div class="test-item flex f-col items-center" data-aos="zoom-in-up" data-aos-duration="1000"
+                data-aos-delay="400">
+                <img src="images/coffvenom.png" alt="">
+                <h1 class="t-white poppins">CoffeSh0p | Project</h1>
+                <p class="t-white poppins">Proyek kedai kopi ini terinspirasi dari kedai kopi di sekitar rumah saya yang
+                    dibangun dengan proses yang sangat cepat, saya berinisiatif untuk membuat proyek ini.
+                </p>
+                <a href="https://coffe-ardian.vercel.app/" target="_blank" class="btn-visit">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="test-item flex f-col items-center" data-aos="zoom-in-up" data-aos-duration="1000"
+                data-aos-delay="600">
+                <img src="images/bookshelf.png" alt="">
+                <h1 class="t-white poppins">BookShelf | Project</h1>
+                <p class="t-white poppins">Project Bookshelf ini merupakan tugas akhir pengumpulan tugas dikelas Front
+                    End, maka saya mempercantik tampilan web ini namun tetap memberikan kesan sederhana
+
+                </p>
+                <a href="https://book-shelf-ardian-r.vercel.app/" target="_blank" class="btn-visit">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="test-item flex f-col items-center" data-aos="zoom-in-up" data-aos-duration="1000"
+                data-aos-delay="800">
+                <img src="images/yakub.png" alt="">
+                <h1 class="t-white poppins">Ya'qub class | Project</h1>
+                <p class="t-white poppins">Project ini dibuat untuk memberikan aksebilitas, dan memberikan kesan
+                    kecanggihan ke aktifan dalam pengembangan TI berbasis website.
+
+                </p>
+                <a href="coming.html" target="_blank" class="btn-visit">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="test-item flex f-col items-center" data-aos="zoom-in-up" data-aos-duration="1000"
+                data-aos-delay="1000">
+                <img src="images/tiktakto project.png" alt="">
+                <h1 class="t-white poppins">Tic Tac Toe | Project</h1>
+                <p class="t-white poppins">Saya membuat proyek tic tac toe ini karena terinspirasi dari masa kecil saya
+                    yang suka bermain xox di selembar kertas, oleh karena itu saya membuat web ini.</p>
+                <a href="https://tic-tac-toe-ardian.vercel.app/" target="_blank" class="btn-visit">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+
+            <div class="test-item flex f-col items-center" data-aos="zoom-in-up" data-aos-duration="1000"
+                data-aos-delay="1200">
+                <img src="images/kalkulator project.png" alt="">
+                <h1 class="t-white poppins">kalkulator | Project</h1>
+                <p class="t-white poppins">Proyek kalkulator ini terinspirasi dari kalkulator yang ada di toko saya,
+                    lalu saya berpikir mengapa saya tidak membuat versi webnya saja.</p>
+                <a href="https://kalkulator-ardian.vercel.app/" target="_blank" class="btn-visit">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- sertification Section -->
+    <section id="sertification">
+        <h1 class=" t-center my-2 t-white f-2" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="500">
+            Certification</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center" data-aos="fade-up" data-aos-duration="1000">
+                <div class="image-container p-one">
+                    <img src="images/sertif dasar Ai.png" alt="">
+                </div>
+                <h1 class="t-white poppins">Belajar dasar Ai</h1>
+                <p class="t-white poppins">Kelas ini memberikan pemahaman dasar-dasar Artificial Intelligence dan
+                    subbidang AI.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://www.dicoding.com/certificates/4EXG75ORGPRL" target="_blanks"
+                        class="btn mx-1 m-top">Live Link</a>
+
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="200">
+                <div class="image-container p-two">
+                    <img src="images/sertif solid.png" alt="">
+                </div>
+
+                <h1 class="t-white poppins">Belajar pemrograman Solid</h1>
+                <p class="t-white poppins"> pedoman untuk rancangan kode yang baik pada pemrograman berorientasi objek
+                    (OOP).</p>
+                <div class="buttons flex s-around">
+                    <a href="https://www.dicoding.com/certificates/2VX34J774ZYQ" target="_blank"
+                        class="btn m-top live">Live Link</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="400">
+                <div class="image-container p-two">
+                    <img src="images/sertif web.png" alt="">
+                </div>
+
+                <h1 class="t-white poppins">Belajar Pemrograman Web</h1>
+                <p class="t-white poppins">komponen dasar HTML CSS merupakan fondasi utama untuk menjadi front-end web
+                    developer.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://www.dicoding.com/certificates/JLX14GKLNX72" target="_blank"
+                        class="btn mx-1 m-top">Live Link</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="600">
+                <div class="image-container p-three">
+                    <img src="images/sertif js.png" alt="">
+                </div>
+
+                <h1 class="t-white poppins">Belajar Pemrograman JS</h1>
+                <p class="t-white poppins">Pelajari dasar JavaScript, dari fundamental, sintaks dan fitur ES6, hingga
+                    konsep automation.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://www.dicoding.com/certificates/1RXY2O55MXVM" target="_blank"
+                        class="btn m-top live">Live Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="800">
+                <div class="image-container p-three">
+                    <img src="images/belajar front.png" alt="">
+                </div>
+
+                <h1 class="t-white poppins">Belajar Front-End Web</h1>
+                <p class="t-white poppins">Mempelajari materi mengenai DOM manipulation, Event, dan Web Storage,
+                    fungsionalitas dan interaktifitas</p>
+                <div class="buttons flex s-around">
+                    <a href="https://www.dicoding.com/certificates/JLX14DGYNX72" target="_blank"
+                        class="btn mx-1 m-top">Live Link</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="1000">
+                <div class="image-container p-three">
+                    <img src="images/belajar c.png" alt="">
+                </div>
+
+                <h1 class="t-white poppins">Belajar Pemrograman C</h1>
+                <p class="t-white poppins">C adalah bahasa prosedural yang memiliki banyak kegunaan. Ia didesain untuk
+                    di-compile secara sederhana.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://www.dicoding.com/certificates/NVP74O9GRPR0" target="_blank"
+                        class="btn m-top live">Live Link</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="1200">
+                <div class="image-container p-three">
+                    <img src="images/netacad.png" alt="">
+                </div>
+
+                <h1 class="t-white poppins">Networking Essentials</h1>
+                <p class="t-white poppins">Mempelajari Konsep LAN PAN MAN WAN, Wirelass, TOpologi, Switching and
+                    Routing, Security Network</p>
+                <div class="buttons flex s-around">
+                    <a href="https://www.netacad.com/certificates?issuanceId=4f1c4e9e-b929-4f1d-877b-2db9d9a7e2c3"
+                        target="_blank" class="btn mx-1 m-top">Live Link</a>
+                </div>
+            </div>
+
+            <div class="projects-item flex f-col s-center items-center" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-delay="1400">
+                <div class="image-container p-three">
+                    <img src="images/cyber sec.png" alt="">
+                </div>
+
+                <h1 class="t-white poppins">Basic Cyber Security</h1>
+                <p class="t-white poppins">Mempelajari konsep tentang Cybersecurity Fundamental keamanan informasi dan
+                    kriptografi.</p>
+                <div class="buttons flex s-around">
+                    <a href="https://digitalent.kominfo.go.id/cek-sertifikat?registrasi=1948203850-48" target="_blank"
+                        class="btn m-top live">Live
+                        Link</a>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form action="" id="contactFrom">
+                    <div class="name form-div" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="2000">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Masukkan nama Anda">
+                    </div>
+                    <div class="email form-div" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="2000" data-aos-delay="100">
+                        <input type="email" name="email" id="email" class="poppins" placeholder="Masukkan email Anda"
+                            required>
+                    </div>
+                    <div class="phone form-div" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="2000" data-aos-delay="200">
+                        <input type="phone" name="phone" id="phone" class="poppins"
+                            placeholder="Masukkan no ponsel Anda" required>
+                    </div>
+                    <div class="textarea form-div" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="2000" data-aos-delay="200">
+                        <textarea name="text" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Masukkan pesan"></textarea>
+                    </div>
+                    <button type="submit" class="btn poppins" id="submit" data-aos="fade-zoom-in"
+                        data-aos-duration="2000" data-aos-delay="400">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" data-aos="fade-zoom-in" data-aos-duration="2000" data-aos-delay="200">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#projects" class="poppinss">Projects</a></li>
+            <li><a href="#sertification" class="poppinss">Certification</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="https://www.linkedin.com/in/arvxianxianardianrahman23?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/ardianrahman405" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="https://www.instagram.com/arxvianxian/profilecard/?igsh=MXRscjVyZTdxbDlrOA==" target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            <a href="https://www.youtube.com/@ardianr7157" target="_blank">
+                <li><i class="fa-brands fa-youtube"></i></li>
+            </a>
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">arvxianxian</span>
+        </p>
+
+    </footer>
+
+    <div id="scroll-top" data-aos="fade-left" data-aos-duration="1000" onclick="scrolltop()">
+        <span><i class="fa-solid fa-arrow-up"></i></span>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        function scrolltop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function checkScroll() {
+            const scrollTopBtn = document.getElementById('scroll-top');
+            const homeSection = document.getElementById('home');
+            const homeRect = homeSection.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Mengecek apakah bagian home ada di viewport
+            if (homeRect.top <= windowHeight && homeRect.bottom >= 0) {
+                scrollTopBtn.style.opacity = 0;
+            } else {
+                scrollTopBtn.style.opacity = 1;
+            }
+        }
+
+        window.addEventListener('scroll', checkScroll);
+        window.addEventListener('resize', checkScroll);
+        document.addEventListener('DOMContentLoaded', checkScroll);
+
+
+        AOS.init();
+    </script>
 </body>
+<script src="script.js"></script>
+
 </html>
